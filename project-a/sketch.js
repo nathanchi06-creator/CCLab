@@ -10,12 +10,12 @@ function setup() {
 
   creature = new Creature(width/2, height/2);
 
-  // star background
+  
   for(let i=0;i<120;i++){
     stars.push(new Star());
   }
 
-  // floating dream particles
+  
   for(let i=0;i<40;i++){
     dreams.push(new Dream());
   }
@@ -51,9 +51,6 @@ function mousePressed(){
   }
 }
 
-////////////////////////////////////////////
-// STARFIELD
-////////////////////////////////////////////
 
 class Star{
 
@@ -89,9 +86,6 @@ function drawStars(){
 
 }
 
-////////////////////////////////////////////
-// DREAMCATCHER WEB
-////////////////////////////////////////////
 
 function drawDreamcatcher(){
 
@@ -127,9 +121,6 @@ function drawDreamcatcher(){
   pop();
 }
 
-////////////////////////////////////////////
-// FEATHERS
-////////////////////////////////////////////
 
 function drawFeathers(radius){
 
@@ -151,9 +142,6 @@ function drawFeathers(radius){
 
 }
 
-////////////////////////////////////////////
-// DREAM PARTICLES
-////////////////////////////////////////////
 
 class Dream{
 
@@ -184,9 +172,6 @@ class Dream{
 
 }
 
-////////////////////////////////////////////
-// CREATURE
-////////////////////////////////////////////
 
 class Creature {
 
